@@ -3,89 +3,10 @@
     font-family: 'Bondoni';
     src: url('../assets/fonts/BOD_R.TTF');
 }
-.bebas-neue__font{
-    font-family: 'Bebas Neue';
-}
-.bondoni-font{
-    font-family: Bondoni;
-}
-.color-gaskuy1{
-    color: #00A6B3;
-}
-.transparant{
-    background: transparent;
+.bg-city{
+    background: url('../assets/image/city-gaskuy.jpg');
     background-size: cover;
-    z-index: 10;
-}
-.bg-gaskuy-2_mobile{
-    background-image: url('../assets/image/gaskuy2.jpg');
-}
-.bg-gaskuy-1_mobile{
-    background-image: url('../assets/image/gaskuy1-mobile.jpg');
-}
-.bg-gaskuy-blog_mobile{
-    background-image: url('../assets/image/gaskuy-blog.jpg');
-}
-.bg-gaskuy-blog-1_mobile{
-    background-image: url('../assets/image/gaskuy-blog-1.jpg');
-}
-.title-page{
-    font-family: 'Bebas Neue';
-    position: relative;
-}
-.title-page::before {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    background: white;
-    left: 50px;
-    top: 40%;
-    position: absolute;
-}
-.title-page::after{
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    background: white;
-    right: 50px;
-    top: 40%;
-    position: absolute;
-}
-/* HEXAGON BUTTON */
-.hexagon {
-    position: relative;
-    width: 50px; 
-    height: 28.87px;
-    background-color: black;
-    margin: 14.43px 0;
-  }
-  
-  .hexagon:before,
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-  }
-  
-  .hexagon:before {
-    bottom: 100%;
-    border-bottom: 14.43px solid black;
-  }
-  
-  .hexagon:after {
-    top: 100%;
-    width: 0;
-    border-top: 14.43px solid black;
-  }
-  /* FOOTER */
-.background-footer{
-background-color: black;
-}
-.icon-decoration{
-text-decoration: none;
-color: grey;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
 }
