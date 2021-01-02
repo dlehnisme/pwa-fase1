@@ -1,12 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@font-face{
-    font-family: 'Bondoni';
-    src: url('../assets/fonts/BOD_R.TTF');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+* {
+    font-family: 'Nunito Sans' ;
+    margin: 0 auto;
 }
-.bg-city{
-    background: url('../assets/image/city-gaskuy.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 30vh;
+
+.container-one{
+    max-width: 450px;
+    min-width: 350px;
+    width: 100%;
+    margin-top: 49px;
+}
+/* HEADER */
+.container-header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    z-index: 99999;
+}
+/* FOOTER */
+.container-footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    z-index: 99999;
+}
+/* HOME */
+.relative-bg{
+    position: relative;
+    top: 70vh;
+    max-width: 450px;
+    min-width: 350px;
+    width: 100%;
+}
+.fixed-bg {
+    /* background-color: black; */
+    position: fixed;
+    height: 90vh;
+    max-width: 450px;
+    min-width: 350px;
+    width: 100%;
+}
+/* DASHBOARD */
+.fixed-dashboard {
+    position: fixed;
+    max-width: 450px;
+    min-width: 350px;
+    width: 100%;
+}
+.relative-dashboard{
+    position: relative;
+    top: 68vh;
+    max-width: 450px;
+    min-width: 350px;
+    width: 100%;
+}
+/* AKOMODASI */
+.fixed-akomodasi{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    z-index: 99999;
+    max-width: 450px;
+    min-width: 350px;
+    width: 90%;
+}
+.fixed-hotel_list{
+    position: fixed;
+    max-width: 450px;
+    min-width: 350px;
+    width: 100%;
+}
+.relative-notes{
+    position: relative;
+    top: 70vh;
+    max-width: 450px;
+    min-width: 350px;
     width: 100%;
 }

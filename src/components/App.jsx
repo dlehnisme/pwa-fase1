@@ -1,23 +1,29 @@
 import React, { Component } from 'react'
-import {BrowserRouter , Route} from 'react-router-dom'
-import City from './page/City'
-import Destination from './page/Destination'
+import {BrowserRouter , Route, Switch} from 'react-router-dom'
+import Dashboard from './page/Dashboard'
+import Footer from './page/Footer'
 import Headers from './page/Headers'
-import Hero from './page/Hero'
-import HowItWork from './page/HowItWork'
-import Problems from './page/Problems'
+import Home from './page/Home'
+import Tranportasi from './page/Dashboard/Transportasi'
+import Destinasi from './page/Dashboard/Destinasi'
+import Akomodasi from './page/Dashboard/Akomodasi'
+import Restourant from './page/Dashboard/Restourant'
 export class App extends Component {
     render() {
         return (
             <BrowserRouter>
-            <div>
-                <Headers/>
-                <Route path='/' exact component={Hero} />    
-                <Route path='/' exact component={Problems} />    
-                <Route path='/' exact component={HowItWork} />    
-                <Route path='/city' component={City} />    
-                <Route path='/destination' component={Destination} />    
-            </div>
+                {/* <Headers/> */}
+                        <div className='container-one'>
+                    <Switch>
+                            <Route path='/' exact component={Home}/>
+                            <Route path='/dashboard' component={Dashboard}/>
+                            <Route path='/transportasi' component={Tranportasi}/>
+                            <Route path='/akomodasi' component={Akomodasi}/>
+                            <Route path='/restourant' component={Restourant}/>
+                            <Route path='/destinasi' component={Destinasi}/>
+                    </Switch>
+                        </div>
+                <Footer/>
             </BrowserRouter>
         )
     }
